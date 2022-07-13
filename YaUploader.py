@@ -30,8 +30,8 @@ class YaUploader:
 
 
 if __name__ == '__main__':
-    relative_file_path = 'YAUPLOAD/new_file_hw_requests.txt'
-    file_name = 'new_file_hw_requests.txt'
-    token = 'AQAAAAADfCWZAADLW9Oow5jpCkVsoQkiYBX1Q8o'
+    relative_file_path = 'YAUPLOAD/new_file_hw_requests.txt'  # Ввести относительный путь к файлу, в кавычках
+    file_name = 'new_file_hw_requests.txt'  # Ввести название файла с указанием расширения, в кавычках
+    token = ''  # Ввести токен для доступа к API Яндекс.Диска, в кавычках
     file = YaUploader(token)
     file.upload(file_path=relative_file_path, file_name=file_name)
